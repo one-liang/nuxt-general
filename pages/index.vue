@@ -1,7 +1,8 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
+  <div class="container mx-auto text-center">
+    <navbar />
+    <div class="my-4 text-center">
+      <logo class="mx-auto" />
       <h1 class="title">
         nuxt-general
       </h1>
@@ -30,10 +31,12 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Navbar from '~/components/Navbar.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    Navbar
   }
 }
 </script>
@@ -44,15 +47,6 @@ export default {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
